@@ -54,19 +54,19 @@ def clearpvecs():
 @app.route('/getjson',methods=['GET'])
 def requestjson():
     result = {}
-    result['pvecs'] = []
+    result['pvecs'] = {}
     for fname in os.listdir('output'):
         with open('output/' + fname) as f:
             lines = f.readlines()
             
         firstrow = lines[0].split()
         secondrow = lines[1].split()
-        result['pvecs'].append({
-            "name": fname.split(".")[0],
+        nname = fname.split(".")[0]
+        result['pvecs'][nname] = {
             "distance": firstrow[0],
             "Sfactor": firstrow[1],
             "vector": secondrow
-        })
+        }
     return result
 
 @app.route('/download-zip')
