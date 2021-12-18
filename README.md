@@ -1,5 +1,6 @@
-# swc2pvecf
-Specifies service for conversion of swc file to pvec with following methods
+# swc2pvec service API
+Adaption of original [Neurontools source code](https://github.com/Nevermore520/NeuronTools) to function as a Dockerized service.   
+The following methods are provided:
 
 ## /clearpvecs
 Clear previously submitted files
