@@ -27,4 +27,6 @@ Fetch calculated pvecs as JSON with following structure for each neuron with nam
 ## /download-zip
 Zips calculated pvecs and returns as zip file
 
+Deployed and callable at with http://cng-nmo-main.orc.gmu.edu/swc2pvec/ as API root.
+
 
