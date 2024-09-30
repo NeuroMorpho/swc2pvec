@@ -1,12 +1,12 @@
-version: '3.4'
+name: swc2pvec
 
 services:
   swcpvec:
-    image: swcpvec
+    image: swc2pvec
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-        - "5016:5000"
+        - "5017:5000"
     volumes:
         - .:/code

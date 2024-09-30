@@ -1,5 +1,5 @@
 # Get the base Ubuntu image from Docker Hub
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 # Update apps on the base image
 RUN DEBIAN_FRONTEND=noninteractive
