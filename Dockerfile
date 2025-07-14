@@ -19,10 +19,11 @@ COPY *.cpp /app/
 COPY *.h /app/
 COPY Makefile /app/
 ADD java /app/java/
-ADD des /app/des/
-ADD input /app/input/
-ADD output /app/output/
-ADD pdg /app/pdg/
+RUN mkdir -p /app/des
+RUN mkdir -p /app/input
+RUN mkdir -p /app/output
+RUN mkdir -p /app/pdg
+
 
 # Use Clang to compile source files
 

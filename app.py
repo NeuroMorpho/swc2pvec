@@ -21,6 +21,13 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+@app.route('/')
+def index():
+    """
+    docstring
+    """
+    return  {"message": "Welcome to the SWC to PVecs API. Use the endpoints to upload files, calculate PVecs, and download results."}
+
 @app.route('/calcpvecs', methods=['GET'])
 def calcpvecs():
     """
